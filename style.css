@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-content: center;
     width: 43%;
-    min-width: 500px;
+    min-width: 600px;
     background-color: white;
     border-radius: 10px;
     padding: 20px 60px;
@@ -49,6 +49,7 @@ h1, h2, p, li {
 .prep {
     background-color: hsl(330, 100%, 98%);
     margin-left: 20px;
+    border-radius: 10px;
 }
 #Preparation {
     color: hsl(332, 51%, 32%);
@@ -96,4 +97,18 @@ li::marker {
 }
 .pad {
     padding: 0;
+}
+@media (max-width:610px) {
+    body {
+        background-color: white;
+    }
+
+    .recipe {
+        min-width: 300px;
+        padding: 20px;
+        margin: 0;
+    }
+    ol {
+        height: 550px;
+    }
 }
